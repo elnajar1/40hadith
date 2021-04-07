@@ -15,10 +15,10 @@ class HadithController extends Controller
      */
      
     //read all hadiths add edite them
-    public function read()
+    public function admin()
     {
       
-       return view('hadith.read' , [ 'all_hadiths' => hadith::all()]);
+       return view('hadith.admin' , [ 'all_hadiths' => hadith::all()]);
     
     }
     
@@ -60,7 +60,7 @@ class HadithController extends Controller
           
           ]);
           
-          return redirect('/hadith/read');
+          return redirect('/hadith/admin');
     }
 
     /**
@@ -80,9 +80,11 @@ class HadithController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(hadith $hadith)
     {
-        //
+        return view('hadith.edit', [
+        'hadith' => $hadith
+          ]);
     }
 
     /**
@@ -94,7 +96,18 @@ class HadithController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        hadith::update([
+          'order' =>  $request->input('order'),
+          
+          'title' =>  $request->input('title'),
+          
+          'head' =>  $request->input('head'), 
+          
+          'content' =>  $request->input('content'),
+          
+          'end' =>  $request->input('end'), 
+          
+          ])->where('id', $id);
     }
 
     /**
@@ -107,7 +120,7 @@ class HadithController extends Controller
     {
       
       $hadith->delete();
-      return redirect('/hadith/read');
+      return redirect('/hadith/admin');
    
     }
 }

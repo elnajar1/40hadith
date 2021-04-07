@@ -10,9 +10,15 @@
    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
   
   <title> 40 Nawawy Hadiths Free Api</title>
+  
+  <style>
+    input , textarea {
+       direction: rtl;
+    }
+  </style>
   </head>
   
-  <body style="font-family: 'Tajawal' , serif; ">
+  <body style="font-family: 'Tajawal' , serif;" >
     
     @yield('content')
     

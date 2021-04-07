@@ -2,17 +2,17 @@
 
 @section('content')
 
-<div class="mt-10 flex flex-col justify-content-center w-10/12 m-auto">
+ <h1 class="p-2 text-lg text-white bg-black text-center ">
+    Forty Nawawy hadiths Free Api  
+ </h1>
+ 
+<div class="mt-10 flex flex-col justify-content-center w-10/12 m-auto" >
   
-  <h2 class ="text-4xl font-bold  text-center ">
-     الاربعون نووية 
+  <h2 class ="text-4xl font-bold  text-center py-5 ">
+     الاربعون نووية | API
   </h2>
   
-  <h1 class="my-4 text-lg text-gray-500  text-center ">
-    Forty Nawawy hadiths Free Api  
-  </h1>
-  
-  <div class="py-5 px-2 bg-gray-100">
+  <div class="py-5 px-2 border">
     <h3 class="my-4 font-bold text-lg">
       How To Use 
     </h3>
@@ -33,18 +33,16 @@
   
   </div>
   
-  <a href="hadith/1" class="my-7 border-bottom border p-2 bg-blue-300">
-    See frist Hadith josn from api
-    - >
+  <a href="/hadith/" class="my-7 border-bottom border p-2 bg-blue-300">
+    See Hadith josn respond from the api
+    -->
   </a>
 
-  <a href="hadith/create" class="my-2 border-bottom border p-2">
-    Create
-    - >
+  <a href="hadith/admin" class="my-2 border-bottom border p-2">
+    Admin Panal ->
   </a>
-  
-  <a href="#" class="mt-10 p-2 bg-black text-white">
-    Share in it On Github
+  <a href="https://github.com/moud449/40hadith" class="mt-10 p-2 bg-black text-white text-center">
+    Share in it on Github
   </a>
   
 </div>

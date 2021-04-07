@@ -18,6 +18,6 @@ Route::get('/', function () {
 });
 
 //read all hadiths add edite them
-Route::get('/hadith/read', [ HadithController::class , 'read']);
+Route::get('/hadith/admin', [ HadithController::class , 'admin']);
 
 Route::resource('/hadith', HadithController::class);
