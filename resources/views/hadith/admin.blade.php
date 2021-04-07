@@ -18,7 +18,7 @@
         {{ $hadith->title }}
       
       </a>
-      <small class="text-sm text-gray-300">
+      <small class="text-sm text-gray-600" style="direction: rtl" >
         {{ $hadith->content }}
       </small>
       <div class="flex">

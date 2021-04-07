@@ -23,7 +23,7 @@
   
   <body style="font-family: 'Tajawal' , serif;" >
     
-     <h1 class="p-2 text-lg text-white bg-black text-center ">
+     <h1 class="p-2 text-lg text-white bg-black text-center font-bold">
       <a href="/">
         Forty Nawawy hadiths Free Api  
       </a>
