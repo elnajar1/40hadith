@@ -1,15 +1,15 @@
 @extends('layout.app')
 
 @section('content')
-
- <h1 class="p-2 text-lg text-white bg-black text-center ">
-    Forty Nawawy hadiths Free Api  
- </h1>
  
 <div class="mt-10 flex flex-col justify-content-center w-10/12 m-auto" >
   
   <h2 class ="text-4xl font-bold  text-center py-5 ">
-     الاربعون نووية | API
+    Api 
+    <span class="text-gray-400">
+       | 
+    </span>
+     الاربعون نووية 
   </h2>
   
   <div class="py-5 px-2 border">
@@ -42,7 +42,8 @@
     Admin Panal ->
   </a>
   <a href="https://github.com/moud449/40hadith" class="mt-10 p-2 bg-black text-white text-center">
-    Share in it on Github
+    Share in developing it on Github
+    <i class="bi bi-github text-white"></i>
   </a>
   
 </div>

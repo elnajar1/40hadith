@@ -11,6 +11,9 @@
   
   <title> 40 Nawawy Hadiths Free Api</title>
   
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+ 
   <style>
     input , textarea {
        direction: rtl;
@@ -20,6 +23,11 @@
   
   <body style="font-family: 'Tajawal' , serif;" >
     
+     <h1 class="p-2 text-lg text-white bg-black text-center ">
+      <a href="/">
+        Forty Nawawy hadiths Free Api  
+      </a>
+     </h1> 
     @yield('content')
     
   </body>

@@ -96,7 +96,7 @@ class HadithController extends Controller
      */
     public function update(Request $request, $id)
     {
-        hadith::update([
+        hadith::find($id)->update([
           'order' =>  $request->input('order'),
           
           'title' =>  $request->input('title'),
@@ -107,7 +107,9 @@ class HadithController extends Controller
           
           'end' =>  $request->input('end'), 
           
-          ])->where('id', $id);
+          ]);
+          
+          return redirect('/hadith/admin');
     }
 
     /**
